@@ -45,7 +45,11 @@ let data = [
   }
 ]
 
-app.get('/',(req, res)=>{
+app.get('/', (req,res)=>{
+  res.send("hello there the site is now working...hurray...!!!!")
+})
+
+app.get('/getdata',(req, res)=>{
   let page = req.query.page ?? 1
   let limit = req.query.limit ?? data.length
 
