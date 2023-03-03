@@ -60,6 +60,6 @@ app.get('/getdata',(req, res)=>{
   res.json(result);
 })
 
-app.listen(3000,()=>{
+app.listen(8080,()=>{
   console.log("app is running...")
 })
