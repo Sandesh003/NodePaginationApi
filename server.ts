@@ -1,4 +1,4 @@
-import express from "express";
+import express, { Express } from 'express';
 
 const app = express();
 
@@ -50,8 +50,8 @@ app.get('/', (req,res)=>{
 })
 
 app.get('/getdata',(req, res)=>{
-  let page = req.query.page ?? 1
-  let limit = req.query.limit ?? data.length
+  let page:any = req.query.page ?? 1
+  let limit:any = req.query.limit ?? data.length
 
   let startPoint = (page - 1) * limit;
   let endPoint = page * limit;
